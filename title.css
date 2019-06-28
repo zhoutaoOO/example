@@ -6,13 +6,12 @@
 body{
     width: 1001px;
     height: 610px;
-    cursor: url("image/shubiao2.png");
 }
 #bcground{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url("image/title/首页背景.jpg");
+    background-image: url("image/title/titleback.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -22,7 +21,7 @@ body{
     left:80%;
     width: 15%;
     height: 20%;
-    background-image: url("image/title/J01.png");
+    background-image: url("image/title/titleenter.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
