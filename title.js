@@ -1,4 +1,16 @@
 $(function () {
+    function  size(){
+        $("#bcground").css(
+            "height",$(window).height()
+    )
+        $("#bcground").css(
+            "width",$(window).width()
+        )
+    }
+   size();
+    $(window).resize(function () {
+        size();
+    })
     $("#bcground").mouseover(function () {
         $(this).css(
             {
@@ -24,6 +36,6 @@ $(function () {
         })
     })
     $("#enter").click(function () {
-        window,location.replace("child web/type-1.html")
+        window,location.replace("item/choose/choose.html")
     })
 })
