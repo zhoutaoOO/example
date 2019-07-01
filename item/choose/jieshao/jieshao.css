@@ -1,0 +1,61 @@
+*{
+    padding: 0px;
+    position: absolute;
+    margin: 0px;
+}
+#jieshaobc{
+    background-image: url("../../../image/knowledge/jieshao/beijing.png");
+    background-repeat: no-repeat;
+    background-size:100% 100% ;
+    background-position: center;
+}
+#daminggong{
+    position: absolute;
+    top:20%;
+    left:60%;
+    width: 10%;
+    height: 5%;
+    background: aqua;
+    align-content: center;
+    text-align: center;
+}
+#dayangta{
+    position: absolute;
+    top:80%;
+    left:70%;
+    width: 10%;
+    height: 5%;
+    background: aqua;
+    align-content: center;
+    text-align: center;
+}
+#chengqiang{
+    position: absolute;
+    top:70%;
+    left:50%;
+    width: 10%;
+    height: 5%;
+    background: aqua;
+    align-content: center;
+    text-align: center;
+}
+#bingmayong{
+    position: absolute;
+    top:10%;
+    left:80%;
+    width: 10%;
+    height: 5%;
+    background: aqua;
+    align-content: center;
+    text-align: center;
+}
+#che{
+position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 10%;
+    height: 7%;
+    background-image: url("../../../image/knowledge/jieshao/cheyou.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+}

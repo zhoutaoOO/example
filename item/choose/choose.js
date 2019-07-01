@@ -89,4 +89,7 @@ $(function () {
     $("#back").click(function () {
         window,location.replace("../../index.html")
     })
+    $("#tu1").click(function () {
+        window.location.replace("jieshao/jieshao.html")
+    })
 })
