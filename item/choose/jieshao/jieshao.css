@@ -91,3 +91,53 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+#dytzt{
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    width: 7%;
+    height: 10%;
+    background-image: url("../../../image/knowledge/jieshao/dytzt.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#dmgzt{
+    position: absolute;
+    top: 2%;
+    left: 60%;
+    width: 7%;
+    height: 10%;
+    background-image: url("../../../image/knowledge/jieshao/dmgzt.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#mcqzt{
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    width: 7%;
+    height: 10%;
+    background-image: url("../../../image/knowledge/jieshao/mcqzt.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#bmyzt{
+    position: absolute;
+    top: 3%;
+    left: 82%;
+    width: 7%;
+    height: 10%;
+    background-image: url("../../../image/knowledge/jieshao/bmyzt.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#back{
+    position: absolute;
+    top:2%;
+    left:10%;
+    width: 10%;
+    height: 15%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../../../image/fanhui.png");
+}

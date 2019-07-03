@@ -14,6 +14,13 @@ $(function () {
     $(window).resize(function () {
         size();
     })
+    $("#jieshaobc").mouseover(function () {
+        $(this).css(
+            {
+                "cursor":"url('../../../image/shubiao1.png'),pointer"
+            }
+        )
+    })
     function change(){
         if (taxitop==0) {
             $("#che").css({
@@ -28,6 +35,11 @@ $(function () {
             })
             taxitop=0;
         }
+    }
+    function windowout(){
+        $("#nextwindow").css({
+            "display":"block"
+        })
     }
     $("#daminggong").click(function () {
         if (taxi==0) {
@@ -86,6 +98,12 @@ $(function () {
                 top:"15%"
             })
         }
+        $("#nextwindow").css({
+            "background-image":"url('../../../image/knowledge/jieshao/dmg.png')"
+        })
+        setTimeout(function () {
+            windowout();
+        },1300)
         taxi=1;
     })
     $("#dayangta").click(function () {
@@ -142,6 +160,12 @@ $(function () {
                 left:"70%"
             })
         }
+        $("#nextwindow").css({
+            "background-image":"url('../../../image/knowledge/jieshao/dyt.png')"
+        })
+        setTimeout(function () {
+            windowout();
+        },1300)
         taxi=2;
     })
     $("#chengqiang").click(function () {
@@ -189,6 +213,12 @@ $(function () {
                 top: "70%"
             })
         }
+        $("#nextwindow").css({
+            "background-image":"url('../../../image/knowledge/jieshao/mcq.png')"
+        })
+        setTimeout(function () {
+            windowout();
+        },1000)
         taxi=3;
     })
     $("#bingmayong").click(function () {
@@ -242,7 +272,96 @@ $(function () {
                 top: "10%"
             })
         }
+        $("#nextwindow").css({
+            "background-image":"url('../../../image/knowledge/jieshao/bmy.png')"
+        })
+        setTimeout(function () {
+            windowout();
+        },1300)
         taxi=4;
     })
-
+    $("#jieshaobc").children("div:not(#che,#nextwindow,#dytzt,#dmgzt,#mcqzt,#bmyzt)").mouseover(function () {
+        $(this).css(
+            {
+                "cursor":"url('../../../image/shubiao2.png'),pointer"
+            }
+        )
+    })
+    $("#back").mouseover(function () {
+        $(this).animate({
+            width: '+=3%',
+            height: '+=5%'
+        })
+    })
+    $("#back").mouseleave(function () {
+        $(this).animate({
+            width: '-=3%',
+            height: '-=5%'
+        })
+    })
+    $("#back").click(function () {
+        window.location.replace("../choose.html");
+    })
+    $("#yes").mouseover(function () {
+        $(this).animate({
+            width: '+=5%',
+            height: '+=5%'
+        })
+        $(this).css(
+            {
+                "cursor":"url('../../../image/shubiao2.png'),pointer"
+            }
+        )
+    })
+    $("#yes").mouseleave(function () {
+        $(this).animate({
+            width: '-=5%',
+            height: '-=5%'
+        })
+    })
+    $("#no").mouseover(function () {
+        $(this).animate({
+            width: '+=5%',
+            height: '+=5%'
+        })
+        $(this).css(
+            {
+                "cursor":"url('../../../image/shubiao2.png'),pointer"
+            }
+        )
+    })
+    $("#no").mouseleave(function () {
+        $(this).animate({
+            width: '-=5%',
+            height: '-=5%'
+        })
+    })
+    $("#no").click(function () {
+        $("#nextwindow").css({
+            "display":"none"
+        })
+    })
+    $("#yes").click(function () {
+        var pd=0;
+        pd=taxi;
+        console.log(pd);
+        switch (pd) {
+            case 1:{
+            window.location.replace("daminggong/dmg.html");
+            break;
+            };
+            case 2:{
+                window.location.replace("dayangta/dyt.html");
+                break;
+            };
+            case 3:{
+                window.location.replace("mingchengqiang/mcq.html");
+                break;
+            };
+            case 4:{
+                window.location.replace("bingmayong/bmy.html");
+                break;
+            };
+        }
+    })
 })

@@ -3,19 +3,19 @@
     position: absolute;
     margin: 0px;
 }
-#bcground{
-    background-image: url("image/title/titleback.png");
+#itembc{
+    background-image: url("../../../../image/knowledge/jieshao/bmy/bmybc.png");
     background-repeat: no-repeat;
     background-size:100% 100% ;
     background-position: center;
 }
-#enter{
+#back{
     position: absolute;
-    top:60%;
+    top:5%;
     left:80%;
-    width: 15%;
-    height: 17%;
-    background-image: url("image/title/titleenter.png");
+    width: 10%;
+    height: 15%;
     background-size: contain;
     background-repeat: no-repeat;
+    background-image: url("../../../../image/fanhui.png");
 }
