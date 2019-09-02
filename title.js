@@ -1,11 +1,23 @@
 $(function () {
     function  size(){
+        $("#bcbody").css(
+            "height",$(window).height()
+        )
+        $("#bcbody").css(
+            "width",$(window).width()
+        )
         $("#bcground").css(
             "height",$(window).height()
     )
         $("#bcground").css(
-            "width",$(window).width()
+            "width",$(window).height()*1.8
         )
+        if ($(window).width()>($(window).height()*1.8))
+        {
+            $("#bcground").css(
+                "left",($(window).width()-($(window).height()*1.8))/2
+            )
+        }
     }
    size();
     $(window).resize(function () {
