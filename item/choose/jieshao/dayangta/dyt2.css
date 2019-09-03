@@ -4,50 +4,39 @@
     margin: 0px;
 }
 #itembc{
-    background-image: url("../../../../image/knowledge/jieshao/dyt/dytbc.png");
+    background-image: url("../../../../image/knowledge/jieshao/dyt/dytbc2.png");
     background-repeat: no-repeat;
     background-size:100% 100% ;
     background-position: center;
 }
 #back{
     position: absolute;
-    top:5%;
-    left:5%;
-    width: 10%;
-    height: 15%;
+    top:-15%;
+    left:-50%;
+    width: 20%;
+    height: 25%;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("../../../../image/fanhui.png");
 }
 #go{
     position: absolute;
-    top:5%;
+    top:-15%;
     left:80%;
-    width: 10%;
-    height: 15%;
+    width: 15%;
+    height: 20%;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("../../../../image/xiayibu.png");
 }
-#text1{
+#text{
 	position: absolute;
-	top: 5%;
-	left: 33%;
-	width: 35%;
+	top: 15%;
+	left: 35%;
+	width: 58%;
 	display:block;
 	word-break: break-all;
 	word-wrap: break-word;
 	text-indent:2em;
-	font-family:"华康钢笔体W2";
-}
-#text2{
-	position: absolute;
-	top: 35%;
-	left: 33%;
-	width: 60%;
-	display:block;
-	word-break: break-all;
-	word-wrap: break-word;
-	text-indent:0em;
 	font-family:"华康钢笔体W2";
 }

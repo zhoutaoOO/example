@@ -22,10 +22,7 @@ $(function () {
     size();
 	
 	function fontsize(){
-		$("#text1").css(
-            "font-size",($(window).height())/20+'px'
-        )
-        $("#text2").css(
+		$("#text").css(
             "font-size",($(window).height())/20+'px'
         )
     }
@@ -62,7 +59,7 @@ $(function () {
         })
     })
     $("#back").click(function () {
-        window.location.replace("../jieshao.html");
+        window.location.replace("dyt.html");
     })
 	
 	 $("#go").mouseover(function () {
@@ -83,6 +80,6 @@ $(function () {
         })
     })
     $("#go").click(function () {
-        window.location.replace("dyt2.html");
+        window.location.replace("dyt3.html");
     })
 })
