@@ -3,8 +3,8 @@
     position: absolute;
     margin: 0px;
 }
-#itembc{
-    background-image: url("../../../../image/knowledge/jieshao/bmy/bmybc.png");
+#itembc3{
+    background-image: url("../../../../image/knowledge/jieshao/bmy/bmybc3.png");
     background-repeat: no-repeat;
     background-size:100% 100% ;
     background-position: center;
@@ -32,8 +32,8 @@
 #text{
 	position: absolute;
 	top: 15%;
-	left: 33%;
-	width: 48%;
+	left: 30%;
+	width: 50%;
 	display:block;
 	word-break: break-all;
 	word-wrap: break-word;
