@@ -4,7 +4,7 @@
     margin: 0px;
 }
 #itembc{
-    background-image: url("../../../../image/knowledge/jieshao/mcq/mcqbc.png");
+    background-image: url("../../../../image/knowledge/jieshao/mcq/mcqbc2.png");
     background-repeat: no-repeat;
     background-size:100% 100% ;
     background-position: center;
@@ -19,7 +19,6 @@
     background-repeat: no-repeat;
     background-image: url("../../../../image/fanhui.png");
 }
-
 #go{
     position: absolute;
     top:5%;
@@ -32,9 +31,9 @@
 }
 #text{
 	position: absolute;
-	top: 17%;
-	left: 43%;
-	width: 50%;
+	top: 14%;
+	left: 10%;
+	width: 80%;
 	display:block;
 	word-break: break-all;
 	word-wrap: break-word;

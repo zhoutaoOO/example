@@ -21,6 +21,8 @@ $(function () {
     }
     size();
 	
+	
+	
 	 function fontsize(){
         $("#text").css(
             "font-size",($(window).height())/20+'px'
@@ -32,7 +34,6 @@ $(function () {
         size();
 		fontsize();
     })
-	
 	
     $(window).resize(function () {
         size();
@@ -64,7 +65,7 @@ $(function () {
         })
     })
     $("#back").click(function () {
-        window.location.replace("../jieshao.html");
+        window.location.replace("mcq.html");
     })
 	
 	 $("#go").mouseover(function () {
@@ -85,7 +86,6 @@ $(function () {
         })
     })
     $("#go").click(function () {
-        window.location.replace("mcq2.html");
+        window.location.replace("mcq3.html");
     })
-	
 })

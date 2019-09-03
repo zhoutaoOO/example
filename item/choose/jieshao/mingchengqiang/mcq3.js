@@ -34,6 +34,9 @@ $(function () {
     })
 	
 	
+	
+	
+	
     $(window).resize(function () {
         size();
     })
@@ -64,7 +67,7 @@ $(function () {
         })
     })
     $("#back").click(function () {
-        window.location.replace("../jieshao.html");
+        window.location.replace("mcq2.html");
     })
 	
 	 $("#go").mouseover(function () {
@@ -85,7 +88,7 @@ $(function () {
         })
     })
     $("#go").click(function () {
-        window.location.replace("mcq2.html");
+        window.location.replace("../jieshao.html");
     })
 	
 })
