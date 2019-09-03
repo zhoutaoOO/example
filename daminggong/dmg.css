@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    position: absolute;
+    margin: 0px;
+}
+#itembc{
+    background-image: url("../../../../image/knowledge/jieshao/dmg/dmgbc.png");
+    background-repeat: no-repeat;
+    background-size:100% 100% ;
+    background-position: center;
+}
+#back{
+    position: absolute;
+    top:5%;
+    left:5%;
+    width: 10%;
+    height: 15%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../../../../image/fanhui.png");
+}
+#go{
+    position: absolute;
+    top:5%;
+    left:80%;
+    width: 10%;
+    height: 15%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../../../../image/xiayibu.png");
+}
+#text{
+	position: absolute;
+	top: 15%;
+	left: 5%;
+	width: 43%;
+	display:block;
+	word-break: break-all;
+	word-wrap: break-word;
+	text-indent:2em;
+	font-family:"华康钢笔体W2";
+	
+}

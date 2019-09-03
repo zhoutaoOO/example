@@ -1,0 +1,181 @@
+*{
+    padding: 0px;
+    position: absolute;
+    margin: 0px;
+}
+#bodybc{
+    background-image: url("../../../image/knowledge/wenda/wendabc.png");
+    background-repeat: no-repeat;
+    background-size:100% 100% ;
+    background-position: center;
+}
+#back{
+    position: absolute;
+    top:5%;
+    left:87%;
+    width: 10%;
+    height: 15%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../../../image/fanhui.png");
+}
+#wendabc1{
+    position: absolute;
+    top: 46%;
+    left: 27%;
+    width: 50%;
+    height: 7%;
+    background-image: url("../../../image/knowledge/wenda/wendakuang.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    line-height:200%;
+    text-align: center;
+}
+#wendabc2{
+    position: absolute;
+    top: 54.5%;
+    left: 27%;
+    width: 50%;
+    height: 7%;
+    background-image: url("../../../image/knowledge/wenda/wendakuang.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    line-height:200%;
+    text-align: center;
+}
+#wendabc3{
+    position: absolute;
+    top: 63%;
+    left: 27%;
+    width: 50%;
+    height: 7%;
+    background-image: url("../../../image/knowledge/wenda/wendakuang.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    line-height:200%;
+    text-align: center;
+}
+#wendabc4{
+    position: absolute;
+    top: 70.5%;
+    left: 27%;
+    width: 50%;
+    height: 7%;
+    background-image: url("../../../image/knowledge/wenda/wendakuang.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    line-height:200%;
+    text-align: center;
+}
+#wenti{
+    display: block;
+    word-break: break-all;
+    word-wrap: break-word;
+    position: absolute;
+    top: 25%;
+    left: 27%;
+    width: 50%;
+    height: 20%;
+    line-height:200%;
+    text-align: left;
+    text-indent: 2em;
+}
+#cuo1{
+    display: none;
+    position: absolute;
+    top: 45%;
+    left: 68%;
+    width: 8%;
+    height: 8%;
+    background-image: url("../../../image/knowledge/wenda/cuo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#cuo2{
+    display: none;
+    position: absolute;
+    top: 54%;
+    left: 68%;
+    width: 8%;
+    height: 8%;
+    background-image: url("../../../image/knowledge/wenda/cuo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#cuo3{
+    display: none;
+    position: absolute;
+    top: 62%;
+    left: 68%;
+    width: 8%;
+    height: 8%;
+    background-image: url("../../../image/knowledge/wenda/cuo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#cuo4{
+    display: none;
+    position: absolute;
+    top: 70%;
+    left: 68%;
+    width: 8%;
+    height: 8%;
+    background-image: url("../../../image/knowledge/wenda/cuo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#dui1{
+    display: none;
+    position: absolute;
+    top: 45%;
+    left: 68%;
+    width: 8%;
+    height: 8%;
+    background-image: url("../../../image/knowledge/wenda/dui.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#dui2{
+    display: none;
+    position: absolute;
+    top: 54%;
+    left: 68%;
+    width: 8%;
+    height: 8%;
+    background-image: url("../../../image/knowledge/wenda/dui.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#dui3{
+    display: none;
+    position: absolute;
+    top: 62%;
+    left: 68%;
+    width: 8%;
+    height: 8%;
+    background-image: url("../../../image/knowledge/wenda/dui.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#dui4{
+    display: none;
+    position: absolute;
+    top: 70%;
+    left: 68%;
+    width: 8%;
+    height: 8%;
+    background-image: url("../../../image/knowledge/wenda/dui.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#next{
+    display: none;
+    position: absolute;
+    top: 75%;
+    left: 80%;
+    width: 15%;
+    height: 15%;
+    background-image: url("../../../image/knowledge/wenda/xia.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
