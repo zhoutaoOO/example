@@ -1,11 +1,23 @@
 $(function () {
     function  size(){
+        $("#bcbody").css(
+            "height",$(window).height()
+        )
+        $("#bcbody").css(
+            "width",$(window).width()
+        )
         $("#choosebc").css(
             "height",$(window).height()
         )
         $("#choosebc").css(
-            "width",$(window).width()
+            "width",$(window).height()*1.8
         )
+        if ($(window).width()>($(window).height()*1.8))
+        {
+            $("#choosebc").css(
+                "left",($(window).width()-($(window).height()*1.8))/2
+            )
+        }
     }
     size();
     $(window).resize(function () {
@@ -91,5 +103,11 @@ $(function () {
     })
     $("#tu1").click(function () {
         window.location.replace("jieshao/jieshao.html")
+    })
+    $("#tu2").click(function () {
+        window.location.replace("wenda/wenda.html")
+    })
+    $("#tu3").click(function () {
+        window.location.replace("game/pintu/pintu.html")
     })
 })
