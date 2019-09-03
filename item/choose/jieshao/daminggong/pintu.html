@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>拼图</title>
+<style type="text/css">
+h3 {
+	text-align: center;
+	color: blue;
+	font-size: 32px;
+	margin: 10px;
+}
+#main {
+	margin: 0 auto;
+	width: 998px;
+	height: 500px;
+	margin-top: 2px;
+	border: 10px #E1A161 solid;
+	border-radius:25px;
+}
+ul, ol {
+	margin: 5px;
+	padding: 0;
+	float: left;
+	list-style-type: none;
+	width: 489px;
+	height: 492px;
+	background-color: wheat;
+}
+li {
+	width: 163px;
+	height: 164px;
+	float: left;
+}
+span {
+	color: black;
+	font-size: 20px;
+}
+i {
+	color: red;
+	font-style: normal;
+}
+img {
+	display: none;
+}
+textarea {
+	display: block;
+	width: 998px;
+	height: 200px;
+	margin: 0 auto;
+	font-size:20px;
+}
+</style>
+</head>
+
+<body>
+<h3>拼图游戏
+  <input type="button" name="button" id="button" value="开始游戏">
+  <span>00:00:00</span> <i></i><br>
+<div id="main">
+  <ul>
+    <li><img src="../../../../image/knowledge/game/pintu/tu1.png" width="163" height="164" alt="" draggable="true" id="drag1" /></li>
+    <li><img src="../../../../image/knowledge/game/pintu/tu2.png" width="163" height="164" alt="" draggable="true" id="drag2" /></li>
+    <li><img src="../../../../image/knowledge/game/pintu/tu3.png" width="163" height="164" alt="" draggable="true" id="drag3" /></li>
+    <li><img src="../../../../image/knowledge/game/pintu/tu4.png" width="163" height="164" alt="" draggable="true" id="drag4" /></li>
+    <li><img src="../../../../image/knowledge/game/pintu/tu5.png" width="163" height="164" alt="" draggable="true" id="drag5" /></li>
+    <li><img src="../../../../image/knowledge/game/pintu/tu6.png" width="163" height="164" alt="" draggable="true" id="drag6" /></li>
+    <li><img src="../../../../image/knowledge/game/pintu/tu7.png" width="163" height="164" alt="" draggable="true" id="drag7" /></li>
+    <li><img src="../../../../image/knowledge/game/pintu/tu8.png" width="163" height="164" alt="" draggable="true"  id="drag8" /></li>
+    <li><img src="../../../../image/knowledge/game/pintu/tu9.png" width="163" height="164" alt="" draggable="true" id="drag9" /></li>
+  </ul>
+  <ol>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ol>
+<div id="back"></div>
+<div id="go"></div>
+</div>
+<script>
+	var oS=document.getElementsByTagName("ul")[0].children;
+	var oD=document.getElementsByTagName("ol")[0].children;
+	var oImg=document.getElementsByTagName("img");
+	var gStart=document.getElementById("button");
+	var oSpan=document.getElementsByTagName("span")[0];
+	var iI=document.getElementsByTagName("i")[0];	
+	var hh=0,mm=0,ss=0,ms;
+	var flag=false;
+	var js=0;
+	var arr=[6,1,7,3,2,4,5,9,8];
+	var st;
+	var lStorage = window.localStorage;
+	var del=document.getElementById("del");
+	var show = window.document.getElementById("show");
+	if(lStorage.myBoard&&!show.value){
+		show.value=lStorage.myBoard;
+	}
+	
+	gStart.onclick=function(){
+		//upInfo();
+		 if(!flag){
+		flag=!flag;
+		for(i=0;i<oImg.length;i++){
+		   oImg[i].style.display="block";
+		}
+		this.value="重新开始";		
+		}
+		else{
+			oSpan.innerHTML="00:00:00";
+			iI.innerHTML="";			arr.sort(function(){ return 0.5 - Math.random() });//随机打乱数组
+			for(i=0;i<oImg.length;i++){	
+			    console.log(oD[arr[i]-1]);
+				oS[i].appendChild(oD[arr[i]-1].firstElementChild);
+			}
+		}
+		if(!js){
+			clearInterval(js);			
+		}
+		st=0;
+		js=setInterval(ct,1000);
+		function ct(){
+		st++;
+		hh=Math.floor(st/3600);
+		hh=(hh<10)?"0"+hh:hh;
+		mm=Math.floor((st%3600)/60);
+		mm=(mm<10)?"0"+mm:mm;
+		ss=Math.floor((st%3600)%60);
+		ss=(ss<10)?"0"+ss:ss;
+		oSpan.innerHTML=hh+":"+mm+":"+ss;
+		}
+	}	
+	for(i=0;i<oD.length;i++){
+	oImg[i].ondragstart=function drag(e){
+		e=e||event;
+        e.dataTransfer.setData("Text",e.target.id);
+    }
+	
+		
+	oD[i].ondragover= function allowDrop(e){
+		e=e||event;
+        e.preventDefault();
+    };
+	oD[i].ondrop=function drop(e){
+	 
+	 if(!this.hasChildNodes())
+	 {
+	 e=e||event;
+     e.preventDefault();
+     
+		var data=e.dataTransfer.getData("Text");
+		 this.appendChild(document.getElementById(data));
+		 checkF();		 	 
+    }
+	}
+	}	
+	function checkF(){
+		
+		for(j=0;j<oD.length;j++){ 
+			if(!oD[j].hasChildNodes()){
+				return false;
+			}
+			else{
+				var imgSrc=oD[j].children[0].src;
+				var lastD=imgSrc.lastIndexOf(".");
+				var index=Number(imgSrc.slice(lastD-2,lastD));
+				if(index!=j+1)
+					return false;				
+			}
+		}
+			clearInterval(js);
+			iI.innerHTML="拼图成功！";
+		    lStorage.scoreT=oSpan.innerHTML;
+		     reg();
+		}
+	 function reg(){
+	  if (lStorage.clickCount)
+      { lStorage.clickCount++; }
+      else
+      { localStorage.clickCount=1; }
+	  var date = new Date();     
+              
+	 if (lStorage.myBoard) {
+		 lStorage.myBoard += "第 " + localStorage.clickCount + " 次游戏时间："+ lStorage.scoreT+ "\t" + date.toLocaleString() + "\n";}
+     else {
+              
+              lStorage.myBoard = "第 " + localStorage.clickCount + " 次游戏时间："+ lStorage.scoreT+ "\t" + date.toLocaleString() + "\n";
+            }
+       show.value = lStorage.myBoard;        
+	 }
+	del.onclick=function cleanInfo() {
+  window.localStorage.clear();
+
+  show.value="";   
+        }
+	</script>
+</body>
+</html>

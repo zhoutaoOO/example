@@ -3,8 +3,8 @@
     position: absolute;
     margin: 0px;
 }
-#itembc{
-    background-image: url("../../../../image/knowledge/jieshao/dmg/dmgbc.png");
+#itembc3{
+    background-image: url("../../../../image/knowledge/jieshao/dmg/dmgbc3.png");
     background-repeat: no-repeat;
     background-size:100% 100% ;
     background-position: center;
@@ -12,7 +12,7 @@
 #back{
     position: absolute;
     top:5%;
-    left:5%;
+    left:3%;
     width: 10%;
     height: 15%;
     background-size: contain;
@@ -31,13 +31,13 @@
 }
 #text{
 	position: absolute;
-	top: 15%;
-	left: 5%;
-	width: 43%;
+	top: 10%;
+	left: 10%;
+	width: 80%;
 	display:block;
 	word-break: break-all;
 	word-wrap: break-word;
-	text-indent:2em;
+	text-indent:1em;
 	font-family:"华康钢笔体W2";
 	
 }

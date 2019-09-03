@@ -6,15 +6,15 @@ $(function () {
         $("#bcbody").css(
             "width",$(window).width()
         )
-        $("#itembc").css(
+        $("#itembc3").css(
             "height",$(window).height()
         )
-        $("#itembc").css(
+        $("#itembc3").css(
             "width",$(window).height()*1.8
         )
         if ($(window).width()>($(window).height()*1.8))
         {
-            $("#itembc").css(
+            $("#itembc3").css(
                 "left",($(window).width()-($(window).height()*1.8))/2
             )
         }
@@ -22,7 +22,7 @@ $(function () {
     size();
 	
 	
-	    function fontsize(){
+	   function fontsize(){
         $("#text").css(
             "font-size",($(window).height())/20+'px'
         )
@@ -34,12 +34,11 @@ $(function () {
 		fontsize();
     })
 	
-	
     $(window).resize(function () {
         size();
     })
 
-    $("#itembc").mouseover(function () {
+    $("#itembc3").mouseover(function () {
         $(this).css(
             {
                 "cursor":"url('../../../../image/shubiao1.png'),pointer"
@@ -65,7 +64,7 @@ $(function () {
         })
     })
     $("#back").click(function () {
-        window.location.replace("../jieshao.html");
+        window.location.replace("../dmg2.html");
     })
 	
 	 $("#go").mouseover(function () {
@@ -86,7 +85,6 @@ $(function () {
         })
     })
     $("#go").click(function () {
-        window.location.replace("dmg2.html");
+        window.location.replace("../jieshao.html");
     })
-	
 })

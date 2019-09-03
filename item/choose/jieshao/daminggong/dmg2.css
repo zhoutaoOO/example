@@ -3,16 +3,16 @@
     position: absolute;
     margin: 0px;
 }
-#itembc{
-    background-image: url("../../../../image/knowledge/jieshao/dmg/dmgbc.png");
+#itembc2{
+    background-image: url("../../../../image/knowledge/jieshao/dmg/dmgbc2.png");
     background-repeat: no-repeat;
     background-size:100% 100% ;
     background-position: center;
 }
 #back{
     position: absolute;
-    top:5%;
-    left:5%;
+    top:3%;
+    left:10%;
     width: 10%;
     height: 15%;
     background-size: contain;
