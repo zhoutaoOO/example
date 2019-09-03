@@ -1,15 +1,26 @@
 $(function () {
     var taxi=0;
     var taxitop=0;
-    function size() {
-        $("#jieshaobc").css(
-            "height", $(window).height()
+    function  size(){
+        $("#bcbody").css(
+            "height",$(window).height()
+        )
+        $("#bcbody").css(
+            "width",$(window).width()
         )
         $("#jieshaobc").css(
-            "width", $(window).width()
+            "height",$(window).height()
         )
+        $("#jieshaobc").css(
+            "width",$(window).height()*1.8
+        )
+        if ($(window).width()>($(window).height()*1.8))
+        {
+            $("#jieshaobc").css(
+                "left",($(window).width()-($(window).height()*1.8))/2
+            )
+        }
     }
-
     size();
     $(window).resize(function () {
         size();
